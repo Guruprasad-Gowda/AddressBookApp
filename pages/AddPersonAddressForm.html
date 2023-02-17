@@ -1,5 +1,5 @@
 <!--
-    UC7 : Populate the Address Book Contact Class and capture the user Entry using getters and setters
+    UC8 : Ability to Add the Address Book Entry into an Address Book List and store it in Local Storage
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +45,8 @@
                 <div class="row-content">
                     <label for="address" class="label text">Address</label>
                     <br>
-                    <textarea name="address" id="address" autocomplete="off" required></textarea>
+                    <textarea name="address" id="address" placeholder="Your address.." autocomplete="off" required></textarea>
+                    <error-output class="address-error"></error-output>
                 </div>
                 <div class="row-content">
                     <div class="column-constrains">
