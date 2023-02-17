@@ -9,23 +9,15 @@ body {
 
 .header {
     padding: 10px 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 .header-content {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: center;
-}
-
-.addressBook-text {
-    text-align: left;
-    font: normal normal bold 22px/25px Roboto, Helvetica, Arial, sans-serif;
-    color: rgba(33, 146, 239);
-    margin-left: 10px;
-}
-
-.addressBook-book {
-    color: black;
+    align-items: center;
 }
 
 .logo-content {
@@ -33,6 +25,20 @@ body {
     flex-direction: row;
     align-items: center;
     width: 80%;
+}
+
+.addressBook-text {
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    color: #008cff;
+    margin-left: 10px;
+}
+
+.addressBook-book {
+    color: #42515f;
 }
 
 .form-content {
@@ -79,7 +85,6 @@ body {
     min-width: 80%;
     min-height: 80%;
     max-width: 100%;
-    margin-bottom: 10px;
 }
 
 .form-constrains {
@@ -89,7 +94,7 @@ body {
 }
 
 label {
-    /* padding: 12px 12px 12px 0; */
+    padding: 12px 12px 12px 0; 
     display: inline-block;
     margin-top: 20px;
 }
@@ -100,7 +105,6 @@ label {
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
-    margin-bottom: 10px;
 }
 
 .input {
@@ -152,4 +156,11 @@ select {
 
 .zipcode {
     padding: 15px 12px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: red;
 }
